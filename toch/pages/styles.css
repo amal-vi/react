@@ -1,8 +1,9 @@
 *{
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
+    box-sizing: border-box;
 }
-h1{
+h1,h4,h3,h5{
   font-family: "Oswald", sans-serif;
 }
 p{
@@ -24,7 +25,7 @@ p{
 }
 .d-block{
     width: 100vw;
-    height: 95vh;
+    height: 90vh;
 }
 .btn-success{
     position: fixed;
@@ -33,8 +34,137 @@ p{
 }
 .btn-success > i{
     font-size: 40px;
+    }
+.container-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #000957;
 }
-.nxt{
-    width: 100vw;
-    height: 100vh;
+.container-icons > .cols{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height: 200px;
+    background-color:#000957;
+} 
+.container-icons > .cols > a > i ,.container-icons > .cols > a >  h4{
+    color: #fff;
+    text-transform:uppercase;
+    transition: ease 0.3s;
 }
+.container-icons > .cols > a > i:hover{
+    color: #577BC1;
+}
+.blinker{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }       
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.blinking-header{
+    color: #344CB7;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    animation: blink 1s infinite;
+}
+
+.card-btn{
+    width: auto;
+    align-self: center;
+    box-shadow: 3px 3px 2px  1px #aba8a8f5;
+    transition: 0.3s;
+}
+.card-btn:focus{
+    position: relative;
+    top: 2px;
+}
+.events-container{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+.event-info{
+    display: flex;
+    flex-shrink: 1;
+    margin: 10px ;
+}
+.date-container{
+    padding: 10px 25px;
+    border: 2px solid #000957;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0;
+    
+}
+.date{
+font-family: "Oswald", sans-serif;
+font-weight: 300;
+font-size: 1.5rem;
+}
+.month{
+font-family: "Oswald", sans-serif;
+font-size: 16px;
+font-weight: 300;
+margin-top: -7px;
+}
+.event-info-2 {
+    margin-left: 20px;
+    font-size: 1rem;
+    
+}
+.event-info-2 > span{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.msg-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes{
+    margin: 20px 0;
+}
+
+.captcha-box{
+    background-color: #d4d1d1;
+    padding: 20px 10px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.captcha-box > input[type="checkbox"]{
+    position: relative;
+    right: -20px;
+    transform: scale(2);
+}
+.captcha-box > span{
+    position: relative;
+    right: 80px;
+    top: 20px;
+    font-size: 20px;
+}
+.captcha{
+    position: relative;
+    right: 10px;
+}
+
