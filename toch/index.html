@@ -207,8 +207,7 @@
   </section>
 
   <!-- card section  -->
-
-  <div class="row row-cols-1 row-cols-md-3 ">
+  <section class="css-cards row row-cols-1 row-cols-md-3">
     <div class="col">
       <div class="card h-100">
         <img src="https://tistcochin.edu.in/wp-content/uploads/2023/11/home-tist.jpg" class="card-img-top" alt="...">
@@ -217,10 +216,13 @@
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
             content. This content is a little bit longer.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore fugit sit libero itaque tempore
-            error ipsam culpa fuga mollitia. Consectetur cupiditate sed ipsum optio est dolor, suscipit veniam illo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur commodi architecto porro! Minus, commodi? Atque dolor accusantium, ratione odit recusandae expedita, dolorum dolore iste vel fugit molestiae ex. Fuga, quibusdam.
+            error ipsam culpa fuga mollitia. Consectetur cupiditate sed ipsum optio est dolor, suscipit veniam
+            illo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur commodi architecto porro! Minus,
+            commodi? Atque dolor accusantium, ratione odit recusandae expedita, dolorum dolore iste vel fugit molestiae
+            ex. Fuga, quibusdam.
           </p>
         </div>
-        <a href="" class="card-btn btn btn-primary mb-5">Read More &rightarrow;</a>
+        <a href="" class="card-btn btn mb-5">Read More &rightarrow;</a>
       </div>
     </div>
     <div class="col">
@@ -296,7 +298,7 @@
 
           </div>
         </div>
-        <a href="" class="card-btn btn btn-primary mb-5">More Events &rightarrow;</a>
+        <a href="" class="card-btn btn  mb-5">More Events &rightarrow;</a>
       </div>
     </div>
     <div class="col">
@@ -304,12 +306,12 @@
         <img src="assets/img/contacts.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h3 class="card-title">Contact Us</h3>
-
+          <form action="">
           <div class="msg-box" placeholder="Name">
-            <input class="boxes" type="text" placeholder="Name">
-            <input class="boxes" type="text" placeholder="Email">
-            <input class="boxes" type="text" placeholder="Subject">
-            <textarea class="boxes" name="" rows="5" cols="5" id="" placeholder="Message..."></textarea>
+            <input class="boxes txt" type="text"  id="nameError" oninput="checkName(event)" required="true"  placeholder="Name" >
+            <input class="boxes txt" type="email" id="emailError" oninput="checkEmail(event)" required="true"   placeholder="Email">
+            <input class="boxes txt" type="text"  id="subError" oninput="checkEmpty(event)" required="true"  placeholder="Subject">
+            <textarea class="boxes txtarea"  rows="5" cols="5"    placeholder="Message..."></textarea>
 
             <div class="captcha-box">
               <input type="checkbox" name="" id="">
@@ -320,17 +322,157 @@
                 <div class="rc-anchor-logo-text">reCAPTCHA</div>
               </div>
             </div>
-            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+            <button type="submit" class="btn  btn-lg">Submit</button>
           </div>
+          </form>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
+  <!-- gallary section -->
+  <section class="gallery">
+    <h1>Toc H Gallery</h1>
+    <div class="slider">
+      <div class="slide-track slider-animation">
+        <div class="slide yahoo">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2024/11/KhoKho.jpeg" height="40" width="275"
+            alt="yahoo" />
+        </div>
+        <div class="slide bloomberg">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2023/11/CongratulationsCSIEEEquiz.jpg" height="40"
+            width="217" alt="bloomberg" />
+        </div>
+        <div class="slide forbes">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2023/11/CALIGO.jpg" height="40" width="154"
+            alt="forbes" />
+        </div>
+        <div class="slide forklog">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2023/02/it-480x320.jpg" height="40" width="166"
+            alt="forklog" />
+        </div>
+        <div class="slide ain">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2023/02/Robotics-2-480x320.jpg" height="40" width="65"
+            alt=ain"" />
+        </div>
+        <div class="slide vector">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2023/02/EL-480x320.jpg" height="40" width="197"
+            alt="vector" />
+        </div>
+        <div class="slide inventure">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2023/01/safety-2025-480x320.jpg" height="40"
+            width="313" alt="inventure" />
+        </div>
+
+        <div class="slide yahoo">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2023/11/civil1-480x320.jpg" height="40" width="275"
+            alt="yahoo" />
+        </div>
+        <div class="slide bloomberg">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2025/02/Greencampus.jpg" height="40" width="217"
+            alt="bloomberg" />
+        </div>
+        <div class="slide forbes">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2025/02/Hackathon-Tink-Her-Hack2.jpeg" height="40"
+            width="154" alt="forbes" />
+        </div>
+        <div class="slide forklog">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2025/02/Handball-Tournament-winners-TIST.jpg"
+            height="40" width="166" alt="forklog" />
+        </div>
+        <div class="slide ain">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2025/02/project-ec.jpg" height="40" width="65"
+            alt=ain"" />
+        </div>
+        <div class="slide vector">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2025/02/safety.jpg" height="40" width="197"
+            alt="vector" />
+        </div>
+        <div class="slide inventure">
+          <img src="https://tistcochin.edu.in/wp-content/uploads/2024/01/Birdseyeview.jpg" height="40" width="313"
+            alt="inventure" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- programmes -->
+  <section class="programmes">
+    <div class="programmes-container-content">
+      <div class="programmes-content">
+        <h3>Computer Science & Engineering</h3>
+        <i class="fa-solid fa-computer fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-wrench fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-city fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-tower-cell fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-bolt fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-laptop-medical fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-robot fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-handshake fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-laptop-code fa-2xl"></i>
+      </div>
+      <div class="programmes-content">
+        <h3>electrical engineering owwoowwe</h3>
+        <i class="fa-solid fa-fire-extinguisher fa-2xl"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- map -->
+  <!-- <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4155.68514771484!2d76.43523447527564!3d9.89222899020777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d08f976f3a9%3A0x87357576fbf04b25!2sToc%20H%20Institute%20of%20Science%20%26%20Technology%20(TIST)!5e1!3m2!1sen!2sin!4v1750306073515!5m2!1sen!2sin"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+  <!-- <button onclick="changeImage()" id="btn-1" style="background-color: red;">click</button>
+<img src="assets/img/contacts.jpg" id="img-change" alt="">
+<button>new btn</button> -->
+<!-- <input type="text" placeholder="values" name="" id="" oninput="(()=>{ console.log
+('wow') ;})()"> -->
+<!-- q -->
+
+
+
+ <!-- <form action="">
+  <input type="text" placeholder="name" required="true" oninput="checkLength(event)"><br>
+  <span id="nameError" style="color: red;"></span><br>    
+  <input type="email" placeholder="email" required="true" oninput="checkEmail(event)"><br>
+  <span id="emailError"></span><br>
+  <input type="password" placeholder="password" required="true"><br>
+  span*5+br
+  <input type="date" placeholder="date of birth" ><br>
+  <button type="submit" placeholder="">signup</button><br>
+ </form> -->
   <!-- bootstrap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
+  <script src="../test.js"></script>
 
-</html>
 </body>
+</html>
